@@ -25,8 +25,8 @@ resource "aws_security_group" "ssh_access" {
 }
 
 resource "aws_instance" "mi_ec2" {
-  ami                         = "ami-012967cc5a8c9f891"
-  instance_type               = "t2.micro"
+  ami                         = "ami-0ec10929233384c7f"
+  instance_type               = var.instance_type
   key_name                    = "vockey"
   subnet_id                   = aws_subnet.subnet_publica_1.id
   vpc_security_group_ids      = [aws_security_group.ssh_access.id]
