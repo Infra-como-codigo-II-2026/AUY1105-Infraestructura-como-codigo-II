@@ -4,11 +4,11 @@ resource "aws_security_group" "ssh_access" {
   vpc_id      = aws_vpc.mi_vpc.id
 
   ingress {
-    description = "SSH desde cualquier lugar"
+    description = "SSH desde Admin por seguridad"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["152.230.70.162/32"] # Permitir desde mi dirección IPv4
+    cidr_blocks = ["152.230.70.162/32"] # Permitir desde cualquier dirección IPv4
   }
 
   egress {
@@ -25,8 +25,8 @@ resource "aws_security_group" "ssh_access" {
 }
 
 resource "aws_instance" "mi_ec2" {
-  ami                         = "ami-012967cc5a8c9f891"
-  instance_type               = "t2.micro"
+  ami                         = "ami-0ec10929233384c7f"
+  instance_type               = var.instance_type
   key_name                    = "vockey"
   subnet_id                   = aws_subnet.subnet_publica_1.id
   vpc_security_group_ids      = [aws_security_group.ssh_access.id]
