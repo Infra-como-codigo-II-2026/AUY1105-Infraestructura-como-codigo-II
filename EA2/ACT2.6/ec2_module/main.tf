@@ -1,8 +1,3 @@
-resource "aws_key_pair" "mi_key" {
-  key_name   = var.key_name
-  public_key = var.public_key
-}
-
 resource "aws_security_group" "ssh_access" {
   count       = var.use_security_group ? 1 : 0 # Condicional basado en la variable
   name        = var.security_group_name
@@ -33,10 +28,9 @@ resource "aws_security_group" "ssh_access" {
 resource "aws_instance" "mi_ec2" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  key_name               = aws_key_pair.mi_key.key_name
+  key_name               = "vockey"
   subnet_id              = var.subnet_id
-  vpc_security_group_ids = var.use_security_group ? [aws_security_group.ssh_access[0].id] : []
-
+  vpc_security_group_ids = var.use_security_group ? [aws_security_group.ssh_access[0].id] : null
   tags = {
     Name = var.instance_name
   }
