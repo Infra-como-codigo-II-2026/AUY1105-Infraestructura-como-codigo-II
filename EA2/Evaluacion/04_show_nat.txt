@@ -1,0 +1,24 @@
+# module.networking.aws_nat_gateway.nat_gw:
+resource "aws_nat_gateway" "nat_gw" {
+    allocation_id                      = "eipalloc-039af0f3b0a8ada51"
+    association_id                     = "eipassoc-0ee45daffc6c19676"
+    connectivity_type                  = "public"
+    id                                 = "nat-0273101a86d403f4f"
+    network_interface_id               = "eni-04573752401eb9cac"
+    private_ip                         = "10.0.1.121"
+    public_ip                          = "100.59.252.93"
+    secondary_allocation_ids           = []
+    secondary_private_ip_address_count = 0
+    secondary_private_ip_addresses     = []
+    subnet_id                          = "subnet-0cf73b1588b257039"
+    tags                               = {
+        "Environment" = "dev"
+        "Name"        = "mi-vpc-nat-gw"
+        "Project"     = "auy1105"
+    }
+    tags_all                           = {
+        "Environment" = "dev"
+        "Name"        = "mi-vpc-nat-gw"
+        "Project"     = "auy1105"
+    }
+}

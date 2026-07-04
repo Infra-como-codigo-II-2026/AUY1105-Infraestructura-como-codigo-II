@@ -1,0 +1,2 @@
+Removed module.compute.aws_security_group.ssh_access
+Successfully removed 1 resource instance(s).

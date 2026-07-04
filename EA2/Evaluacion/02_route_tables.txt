@@ -1,0 +1,137 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "Main": true,
+                    "RouteTableAssociationId": "rtbassoc-08e88f8cf738e3c03",
+                    "RouteTableId": "rtb-022530475c1e82f18",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-022530475c1e82f18",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                }
+            ],
+            "Tags": [],
+            "VpcId": "vpc-02c1783c1b94081af",
+            "OwnerId": "058264481271"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0fc9e24ca38347719",
+                    "RouteTableId": "rtb-03964f8ddd85282a9",
+                    "SubnetId": "subnet-009772a059b228292",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                },
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-048db31c93b6cbc6e",
+                    "RouteTableId": "rtb-03964f8ddd85282a9",
+                    "SubnetId": "subnet-01e0f6cfab6d86b09",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-03964f8ddd85282a9",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-0273101a86d403f4f",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "mi-vpc-private-rt"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "auy1105"
+                }
+            ],
+            "VpcId": "vpc-02c1783c1b94081af",
+            "OwnerId": "058264481271"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0d86c4e0d44a5c2b7",
+                    "RouteTableId": "rtb-0916f52c1af4a6133",
+                    "SubnetId": "subnet-01a6ee652f1a91db0",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                },
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0f90b54d66307bf30",
+                    "RouteTableId": "rtb-0916f52c1af4a6133",
+                    "SubnetId": "subnet-0cf73b1588b257039",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0916f52c1af4a6133",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-0fb5e19f92dea52ca",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "mi-vpc-public-rt"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "auy1105"
+                }
+            ],
+            "VpcId": "vpc-02c1783c1b94081af",
+            "OwnerId": "058264481271"
+        }
+    ]
+}

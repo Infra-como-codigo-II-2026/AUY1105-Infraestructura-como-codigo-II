@@ -1,0 +1,52 @@
+# module.storage.aws_s3_bucket.main:
+resource "aws_s3_bucket" "main" {
+    acceleration_status         = [90mnull[0m[0m
+    arn                         = "arn:aws:s3:::auy1105-dev-grupo-6-data"
+    bucket                      = "auy1105-dev-grupo-6-data"
+    bucket_domain_name          = "auy1105-dev-grupo-6-data.s3.amazonaws.com"
+    bucket_prefix               = [90mnull[0m[0m
+    bucket_regional_domain_name = "auy1105-dev-grupo-6-data.s3.us-east-1.amazonaws.com"
+    hosted_zone_id              = "Z3AQBSTGFYJSTF"
+    id                          = "auy1105-dev-grupo-6-data"
+    object_lock_enabled         = false
+    policy                      = [90mnull[0m[0m
+    region                      = "us-east-1"
+    request_payer               = "BucketOwner"
+    tags                        = {
+        "Environment" = "dev"
+        "ManagedBy"   = "terraform"
+        "Name"        = "auy1105-dev-grupo-6-data"
+        "Project"     = "auy1105"
+    }
+    tags_all                    = {
+        "Environment" = "dev"
+        "ManagedBy"   = "terraform"
+        "Name"        = "auy1105-dev-grupo-6-data"
+        "Project"     = "auy1105"
+    }
+
+    grant {
+        id          = "470e2389aec68c5abba68c120ff4b2435f9f15c40f564b8147472eef89103eaa"
+        permissions = [
+            "FULL_CONTROL",
+        ]
+        type        = "CanonicalUser"
+        uri         = [90mnull[0m[0m
+    }
+
+    server_side_encryption_configuration {
+        rule {
+            bucket_key_enabled = false
+
+            apply_server_side_encryption_by_default {
+                kms_master_key_id = [90mnull[0m[0m
+                sse_algorithm     = "AES256"
+            }
+        }
+    }
+
+    versioning {
+        enabled    = true
+        mfa_delete = false
+    }
+}

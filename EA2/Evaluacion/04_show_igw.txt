@@ -1,0 +1,17 @@
+# module.networking.aws_internet_gateway.igw:
+resource "aws_internet_gateway" "igw" {
+    arn      = "arn:aws:ec2:us-east-1:058264481271:internet-gateway/igw-0fb5e19f92dea52ca"
+    id       = "igw-0fb5e19f92dea52ca"
+    owner_id = "058264481271"
+    tags     = {
+        "Environment" = "dev"
+        "Name"        = "mi-vpc-igw"
+        "Project"     = "auy1105"
+    }
+    tags_all = {
+        "Environment" = "dev"
+        "Name"        = "mi-vpc-igw"
+        "Project"     = "auy1105"
+    }
+    vpc_id   = "vpc-02c1783c1b94081af"
+}

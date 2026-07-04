@@ -1,0 +1,30 @@
+[0m[1mmodule.networking.aws_vpc.main: Refreshing state... [id=vpc-02c1783c1b94081af][0m
+[0m[1mmodule.networking.aws_eip.nat_eip: Refreshing state... [id=eipalloc-039af0f3b0a8ada51][0m
+[0m[1mmodule.storage.aws_s3_bucket.main: Refreshing state... [id=auy1105-dev-grupo-6-data][0m
+[0m[1mmodule.storage.aws_s3_bucket_public_access_block.main: Refreshing state... [id=auy1105-dev-grupo-6-data][0m
+[0m[1mmodule.storage.aws_s3_bucket_server_side_encryption_configuration.main: Refreshing state... [id=auy1105-dev-grupo-6-data][0m
+[0m[1mmodule.storage.aws_s3_bucket_versioning.main: Refreshing state... [id=auy1105-dev-grupo-6-data][0m
+[0m[1mmodule.networking.aws_subnet.subnet_privada_1: Refreshing state... [id=subnet-01e0f6cfab6d86b09][0m
+[0m[1mmodule.networking.aws_route_table.private_rt: Refreshing state... [id=rtb-03964f8ddd85282a9][0m
+[0m[1mmodule.networking.aws_subnet.subnet_publica_1: Refreshing state... [id=subnet-0cf73b1588b257039][0m
+[0m[1mmodule.networking.aws_route_table.public_rt: Refreshing state... [id=rtb-0916f52c1af4a6133][0m
+[0m[1mmodule.networking.aws_subnet.subnet_publica_2: Refreshing state... [id=subnet-01a6ee652f1a91db0][0m
+[0m[1mmodule.compute.aws_security_group.ssh_access: Refreshing state... [id=sg-0d82956068142cb22][0m
+[0m[1mmodule.networking.aws_subnet.subnet_privada_2: Refreshing state... [id=subnet-009772a059b228292][0m
+[0m[1mmodule.networking.aws_internet_gateway.igw: Refreshing state... [id=igw-0fb5e19f92dea52ca][0m
+[0m[1mmodule.networking.aws_route_table_association.private_assoc_1: Refreshing state... [id=rtbassoc-048db31c93b6cbc6e][0m
+[0m[1mmodule.networking.aws_route.public_route: Refreshing state... [id=r-rtb-0916f52c1af4a61331080289494][0m
+[0m[1mmodule.networking.aws_route_table_association.public_assoc_1: Refreshing state... [id=rtbassoc-0f90b54d66307bf30][0m
+[0m[1mmodule.networking.aws_nat_gateway.nat_gw: Refreshing state... [id=nat-0273101a86d403f4f][0m
+[0m[1mmodule.networking.aws_route_table_association.private_assoc_2: Refreshing state... [id=rtbassoc-0fc9e24ca38347719][0m
+[0m[1mmodule.compute.aws_instance.main: Refreshing state... [id=i-032f1b5b425e4581b][0m
+[0m[1mmodule.networking.aws_route_table_association.public_assoc_2: Refreshing state... [id=rtbassoc-0d86c4e0d44a5c2b7][0m
+[0m[1mmodule.networking.aws_route.private_route: Refreshing state... [id=r-rtb-03964f8ddd85282a91080289494][0m
+[0m[1m[32m
+Outputs:
+
+[0mbucket_name = "auy1105-dev-grupo-6-data"
+instance_id = "i-032f1b5b425e4581b"
+instance_ip = "3.89.197.187"
+subnet_publica_1_id = "subnet-0cf73b1588b257039"
+vpc_id = "vpc-02c1783c1b94081af"
